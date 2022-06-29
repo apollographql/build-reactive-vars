@@ -1,5 +1,5 @@
 import React from "react";
-import { spaceshipPassengersVar } from "../client";
+// import { spaceshipPassengersVar } from "../client";
 
 export default function CharacterCard({ character }) {
   return (
@@ -21,7 +21,7 @@ export default function CharacterCard({ character }) {
         <h2>{character.name}</h2>
         <h3>{character.species}</h3>
       </div>
-      <button
+      {/* <button
         style={{ marginTop: "auto" }}
         onClick={() =>
           spaceshipPassengersVar(
@@ -34,7 +34,7 @@ export default function CharacterCard({ character }) {
         }
       >
         {character.isSpaceshipPassenger ? "Remove from" : "Add to"} spaceship
-      </button>
+      </button> */}
     </div>
   );
 }
