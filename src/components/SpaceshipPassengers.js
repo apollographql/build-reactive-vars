@@ -1,4 +1,5 @@
 import React from "react";
+import { spaceshipPassengersVar } from "../client";
 // import { gql, useQuery } from "@apollo/client";
 
 // export const GET_PASSENGERS = gql`
@@ -14,6 +15,7 @@ import React from "react";
 // `;
 
 export default function SpaceshipPassengers() {
+  console.log(spaceshipPassengersVar());
   // const { data, loading, error } = useQuery(GET_PASSENGERS);
 
   // if (loading) {
