@@ -1,6 +1,7 @@
-import { ApolloClient, InMemoryCache, makeVar } from "@apollo/client";
+import { ApolloClient, InMemoryCache /* makeVar */ } from "@apollo/client";
 
-export const spaceshipPassengersVar = makeVar(["1", "2", "3"]);
+/* STEP 2 */
+// export const spaceshipPassengersVar = makeVar(["1", "2", "3"]);
 
 const cache = new InMemoryCache({
   // typePolicies: {
@@ -14,6 +15,7 @@ const cache = new InMemoryCache({
   //       },
   //     },
   //   },
+  // /* STEP 4 */
   //   Character: {
   //     fields: {
   //       isSpaceshipPassenger: {
@@ -25,6 +27,7 @@ const cache = new InMemoryCache({
   //       },
   //     },
   //   },
+  // },
   // },
 });
 

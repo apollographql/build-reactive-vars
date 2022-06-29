@@ -1,4 +1,5 @@
 import React from "react";
+// STEP 6 pt 1
 // import { spaceshipPassengersVar } from "../client";
 
 export default function CharacterCard({ character }) {
@@ -21,8 +22,10 @@ export default function CharacterCard({ character }) {
         <h2>{character.name}</h2>
         <h3>{character.species}</h3>
       </div>
+      {/* STEP 1 */}
       {/* <button
         style={{ marginTop: "auto" }}
+        //  STEP 7 & 8 
         onClick={() =>
           spaceshipPassengersVar(
             character.isSpaceshipPassenger
@@ -33,6 +36,7 @@ export default function CharacterCard({ character }) {
           )
         }
       >
+         // STEP 6 pt 2 
         {character.isSpaceshipPassenger ? "Remove from" : "Add to"} spaceship
       </button> */}
     </div>

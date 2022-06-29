@@ -10,7 +10,8 @@ const GET_CHARACTERS = gql`
         name
         image
         species
-        isSpaceshipPassenger @client
+        # STEP 5
+        # isSpaceshipPassenger @client
       }
     }
   }

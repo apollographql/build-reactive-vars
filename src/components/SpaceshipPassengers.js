@@ -1,7 +1,11 @@
 import React from "react";
-import { spaceshipPassengersVar } from "../client";
+// STEP 9
 // import { gql, useQuery } from "@apollo/client";
 
+// STEP 3 then remove in STEP 10
+// import { spaceshipPassengersVar } from "../client";
+
+// STEP 9
 // export const GET_PASSENGERS = gql`
 //   query GetPassengers {
 //     characters {
@@ -15,7 +19,10 @@ import { spaceshipPassengersVar } from "../client";
 // `;
 
 export default function SpaceshipPassengers() {
-  console.log(spaceshipPassengersVar());
+  /* STEP 3 then remove in STEP 10 */
+  // console.log(spaceshipPassengersVar());
+
+  // STEP 11
   // const { data, loading, error } = useQuery(GET_PASSENGERS);
 
   // if (loading) {
@@ -39,26 +46,28 @@ export default function SpaceshipPassengers() {
   // }
 
   return (
-    <div> TODO </div>
-    // <div
-    //   style={{
-    //     display: "grid",
-    //     gridTemplateColumns: "repeat(auto-fill, 100px)",
-    //     gap: 20,
-    //   }}
-    // >
-    //   {passengers.map((passenger) => (
-    //     <img
-    //       key={passenger.id}
-    //       src={passenger.image}
-    //       alt={passenger.name}
-    //       style={{
-    //         width: "100%",
-    //         borderRadius: "50%",
-    //         border: "5px solid #318bbe",
-    //       }}
-    //     />
-    //   ))}
-    // </div>
+    <div
+    // STEP 12
+    // style={{
+    //   display: "grid",
+    //   gridTemplateColumns: "repeat(auto-fill, 100px)",
+    //   gap: 20,
+    // }}
+    >
+      TODO
+      {/* STEP 12 */}
+      {/* {passengers.map((passenger) => (
+        <img
+          key={passenger.id}
+          src={passenger.image}
+          alt={passenger.name}
+          style={{
+            width: "100%",
+            borderRadius: "50%",
+            border: "5px solid #318bbe",
+          }}
+        />
+      ))} */}
+    </div>
   );
 }
