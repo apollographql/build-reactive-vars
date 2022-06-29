@@ -1,5 +1,5 @@
 import React from "react";
-// STEP 6 pt 1
+//  STEP 7 & 8
 // import { spaceshipPassengersVar } from "../client";
 
 export default function CharacterCard({ character }) {
@@ -36,7 +36,7 @@ export default function CharacterCard({ character }) {
           )
         }
       >
-         // STEP 6 pt 2 
+         // STEP 6
         {character.isSpaceshipPassenger ? "Remove from" : "Add to"} spaceship
       </button> */}
     </div>
