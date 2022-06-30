@@ -1,6 +1,5 @@
 import React from "react";
-//  STEP 7 & 8
-// import { spaceshipPassengersVar } from "../client";
+import { spaceshipPassengersVar } from "../client";
 
 export default function CharacterCard({ character }) {
   return (
@@ -22,23 +21,20 @@ export default function CharacterCard({ character }) {
         <h2>{character.name}</h2>
         <h3>{character.species}</h3>
       </div>
-      {/* STEP 1 */}
-      {/* <button
-        style={{ marginTop: "auto" }}
-        //  STEP 7 & 8 
-        onClick={() =>
+      <button
+        onClick={() => {
+          const currentPassengers = spaceshipPassengersVar();
           spaceshipPassengersVar(
             character.isSpaceshipPassenger
-              ? spaceshipPassengersVar().filter(
+              ? currentPassengers.filter(
                   (characterId) => characterId !== character.id
                 )
-              : [...spaceshipPassengersVar(), character.id]
-          )
-        }
+              : [...currentPassengers, character.id]
+          );
+        }}
       >
-         // STEP 6
         {character.isSpaceshipPassenger ? "Remove from" : "Add to"} spaceship
-      </button> */}
+      </button>
     </div>
   );
 }
